@@ -50,7 +50,7 @@ def upload():
         }]
         return jsonify(upload=upload)
     else:
-        lst = form_errors(UploadForm)
+        lst = form_errors(form)
         errors = {
             "errors": lst
         }
